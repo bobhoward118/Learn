@@ -1,0 +1,52 @@
+p {
+	font-family: Garamond, serif;
+}
+
+#intro {
+	font-weight: bold;
+	color: #000000;
+}
+
+div p {
+	color: #7AC5CD;
+}
+
+li p {
+	font-family: Verdana, sans-serif;
+	color: #000000;
+}
+
+.list_item {
+	font-family: Vivaldi, cursive;
+}
+
+#summary {
+	font-size: 20px;
+	color: #000000;
+}
+
+a {
+    display: block;
+}
+
+a:first-child {
+    color: #cdbe70;
+}
+
+a:nth-child(3) {
+    color: #ffc125;
+}
+
+a:link {
+    text-decoration: none;
+    color: #008b45;
+}
+
+a:hover {
+	color: #00ff00;
+}
+
+a:visited {
+    color: #ee9a00;
+}
+

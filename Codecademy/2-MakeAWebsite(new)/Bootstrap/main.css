@@ -1,0 +1,220 @@
+
+Make a Website
+Connected to Codecademy
+
+
+http://localhost:8000
+
+index.html
+main.css
+
+1
+body {
+2
+  font-family: 'Roboto', sans-serif;
+3
+  font-weight: 300;
+4
+}
+5
+​
+6
+header {
+7
+  padding: 20px 0;
+8
+}
+9
+​
+10
+header .row,
+11
+footer .row {
+12
+  display: flex;
+13
+  align-items: center;
+14
+}
+15
+​
+16
+header h1 {
+17
+  font-weight: 700;
+18
+  margin: 0;
+19
+}
+20
+​
+21
+header nav {
+22
+  display: flex;
+23
+  justify-content: flex-end;
+24
+}
+25
+​
+26
+header p {
+27
+  padding: 0 20px;
+28
+  margin: 0;
+29
+}
+30
+​
+31
+.jumbotron {
+32
+  display: flex;
+33
+  align-items: center;
+34
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
+35
+  background-size: cover;
+36
+  color: #ffffff;
+37
+  height: 500px;
+38
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+39
+}
+40
+​
+41
+.jumbotron h2 {
+42
+  font-size: 60px;
+43
+  font-weight: 700;
+44
+  margin: 0;
+45
+  color: #fff;
+46
+}
+47
+​
+48
+.jumbotron h3 {
+49
+  margin: 0 0 20px;
+50
+  color: #fff;
+51
+}
+52
+​
+53
+section .row img {
+54
+  margin: 0 0 30px;
+55
+  width: 100%;
+56
+}
+57
+​
+58
+.col-md-6 {
+59
+  margin: 0 0 30px;
+60
+}
+61
+​
+62
+.btn.btn-primary {
+63
+  border-radius: 2px;
+64
+  border: 0px;
+65
+  color: #fbd1d5;
+66
+  text-shadow: none;
+67
+  background-color: #ffffff;
+68
+}
+69
+​
+70
+.btn.btn-primary:hover {
+71
+  color: #ffffff;
+72
+  background-color: #fbd1d5;
+73
+}
+74
+​
+75
+.btn-secondary {
+76
+  background-color: #E8DFE0;
+77
+  color: #ffffff;
+78
+  margin: 0 0 30px;
+Run
+
+Before Bootstrap can work for us, we need to link to it.
+
+In earlier lessons, we linked only to main.css. Now, in addition to main.css, we will link to a URL that hosts Bootstrap.
+
+The HTML link element makes Bootstrap available to us. Remember that the link element is typically contained within HTML head tags.
+
+<head>
+  ... 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  ...
+</head>
+Above, the href attribute is set to the URL https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css.
+
+Let's explore what Bootstrap can do for us.
+1.
+Notice the "Skillfair" webpage to the right and locate the diagonal arrows in the top right corner of the web browser (near https://localhost:8000/). Click the arrows to toggle the web browser between narrow and full-width views, and observe the following:
+
+Navbar items do not change position as you toggle the webpage width.
+
+The "Homemade Goods" text appears on the far left side of the webpage.
+
+Photographs increase in size when the web browser is toggled to full-width.
+
+Social media icons at the bottom of the webpage appear disorganized.
+Click Run after you have observed these points.
+2.
+Now we will connect to Bootstrap and see changes to the webpage layout.
+
+In index.html, locate the head element. Inside head, create a link element to link to Bootstrap:
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+Click Run.
+
+Toggle the web browser's width again to notice the following changes:
+
+Navbar items change position based on the webpage's width.
+
+The "Homemade Goods" text is now centered.
+
+"Kitchen", "woodwork", "antique" and "gifts" photographs are arranged two per row when the webpage is full-width.
+
+Social media icons appear organized and change position at full and narrow widths.
+Bootstrap's grid is responsible for this screen-width responsiveness. Click Next to learn more!
+Report a Bug
+If you see a bug or any other issue with this page, please report it here.
+Learn
+Instructions
+2. Connecting to Bootstrap
+Back
+2/8
+Next
+Get Help

@@ -1,0 +1,89 @@
+.race-track {
+  height: 300px;
+  width: 100%;
+  background: #222;
+}
+
+.race-track div {
+  height: 100px;
+  position: relative;
+}
+
+.top, .middle {
+  border-bottom: 2px solid white;
+}
+
+.racer {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 30px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+}
+
+.turtle {
+  animation: turtle 5s linear;
+  -webkit-animation: turtle 5s linear;
+}
+
+.human {
+  animation: human 6s linear;
+  -webkit-animation: human 6s linear;
+}
+
+.hare {
+  animation: hare 7s linear;
+  -webkit-animation: hare 7s linear;
+}
+
+@keyframes turtle {
+  0% {left: 0;}
+  25% {left: 10%;}
+  50% {left: 30%;}
+  75% {left: 60%;}
+  100% {left: 100%;}
+}
+@-webkit-keyframes turtle {
+  0% {left: 0;}
+  25% {left: 10%;}
+  50% {left: 30%;}
+  75% {left: 60%;}
+  100% {left: 100%;}
+}
+
+@keyframes human {
+  0% {left: 0;}
+  25% {left: 20%;}
+  50% {left: 50%;}
+  75% {left: 80%;}
+  100% {left: 100%;}
+}
+@-webkit-keyframes human {
+  0% {left: 0;}
+  25% {left: 20%;}
+  50% {left: 50%;}
+  75% {left: 80%;}
+  100% {left: 100%;}
+}
+
+@keyframes hare {
+  0% {left: 0;}
+  25% {left: 40%;}
+  50% {left: 65%;}
+  75% {left: 85%;}
+  100% {left: 100%;}
+}
+@-webkit-keyframes hare {
+  0% {left: 0;}
+  25% {left: 42%;}
+  50% {left: 65%;}
+  75% {left: 87%;}
+  100% {left: 100%;}
+}
+/* @-webkit-keyframes hare {
+  from {left: 0;}
+  to {left: 100%;}
+}

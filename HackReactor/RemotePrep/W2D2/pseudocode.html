@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="greeting">
+		<!-- <p>If not (is_member) or if (age) < 21, address as "sir" or "ma'am" and deny club access.</p>
+		<p>Else greet by (gender) "Mr." or "Mrs." and (name), then welcome. If (thirsty) = "yes", ask (drink_of_choice).</p>
+		<p>If (drink_of_choice) is not "Coors Light" say "yes" (name) "one" (drink_name) "coming right up". If (drink_of_choice) is "Coors Light" kick them out.</p>-->
+	</div>
+	<script>
+		// name, age, gender, is_member, thirsty, drink_of_choice, drink_name
+		var member = prompt("Are you a member?\nEnter yes or no: ");
+		var age = prompt("What is your age?");
+		var gender = prompt("Are you male or female?\nEnter M or F: ")
+		if (member == "no" || age < 21) {
+			if (gender == "M" || gender == "m") {
+				alert("Sir, this club is for members only.")
+			} else {
+				alert("Ma'am, this club is for members only.")
+			}
+		} else {
+			var name = prompt("What is your name?")
+			if (gender == "M" || gender == "m") {
+				alert("Mr. " + name + ", welcome to Club Paradise!");
+			} else {
+				alert("Mrs. " + name + ", welcome to Club Paradise!");
+			}
+			var thirsty = prompt("Are you thirsty?\nEnter yes or no: ");
+			if (thirsty == "yes") {
+				var drink_name = prompt("What would you like to drink?")
+				if (drink_name != "Coors Light") {
+					alert("Yes " + name + ", one " + drink_name + " coming right up!")
+				} else {
+					alert("We do not serve Coors Light here. I must ask you to leave.")
+				}
+			}
+		}
+	</script>
+</body>
+</html>

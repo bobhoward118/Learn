@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+}
+p {
+	/*text-align: center;*/
+}
+h1 {
+	color: red;
+}
+.outline {
+	width: 150px;
+	padding: 10px;
+	border: 10px solid red;
+	margin: 20px;
+	outline: 10px solid blue;
+}
+/* BLUE BOX */
+.blue-block {
+   background: blue;
+   width: 100px;
+   height: 100px;
+   transition: background 300ms;
+}
+.blue-block:hover {
+  background: red;
+}
+.blue-block:active {
+  background: green;
+}
+
+
+/* KEYFRAME */
+@-webkit-keyframes red-animation {
+  0%: {
+    background: yellow;
+  }
+  33% {
+    background: red;
+  }
+  66% {
+    background: green;
+  }
+  100%: {
+    background: blue;
+  }
+}
+.red-box {
+	background-color: yellow;
+	width: 150px;
+	height: 150px;
+	-webkit-animation: red-animation 3s;
+}
+.columns p {
+  column-count: 2;
+}

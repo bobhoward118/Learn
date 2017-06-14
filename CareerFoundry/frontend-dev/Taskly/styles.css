@@ -1,0 +1,39 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #ffead9; 
+  color: #73150d;
+	font-family: 'Special Elite', cursive;
+	line-height: 1.5;
+}
+
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.jumbotron { 
+  background-image: url("img/splash.jpg"); 
+  background-position: 50% 50%; 
+}
+
+.container {
+  /*background-color: black;*/
+  font-size: 12px;
+}
+
+.container.contact {
+  background-color: white;
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #ffead9; 
+  color: #73150d;
+  font-family: Georgia, Helvetica, Serif;
+}
+
+* {
+   /*border: 1px solid red !important;*/
+}

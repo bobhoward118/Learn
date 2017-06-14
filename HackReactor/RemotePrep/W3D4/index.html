@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="special"></div>
+<script>
+  var dream_car = {};
+  dream_car.make = "Toyota";
+  dream_car.model = "Camry";
+  dream_car.color = "Grey";
+  dream_car.year = 2016;
+  dream_car.registered = true;
+
+  for (var key in dream_car) {
+    console.log(dream_car[key]);
+    // $('#special').append(dream_car[key])
+  }
+
+  // for (var key in dream_car) {
+  //   if (dream_car[key] === dream_car.color) {
+  //     console.log(dream_car.color);
+  //     // $('#special').append(dream_car[key])
+  //   }
+  // }
+
+  // for (var key in dream_car) {
+  //   if (dream_car[key] === "Grey") {
+  //     // console.log(dream_car.color);
+  //     $('#special').append(dream_car[key])
+  //   }
+  // }
+</script>
+</body>
+</html>

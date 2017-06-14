@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.odd {
+			color: red;
+		}
+		.even {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="target"></div>
+	<script>
+		var n = 8;
+		var counter = 1;
+		var string = "";
+
+		while (counter <= n) {
+			if (counter % 2 === 0) {
+				string += '<p class="even">'
+			} else {
+				string += '<p class="odd">'
+			}
+
+			string += counter + "</p>";
+			if (counter !== n) {
+				string += "<hr>";
+			}
+
+			counter++;
+		}
+		document.querySelector('#target').innerHTML = string;
+	</script>
+</body>
+</html>

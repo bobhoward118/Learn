@@ -1,0 +1,3 @@
+Make a basic two-column layout using Bootstrap, where the sidebar is at four columns and your main content is eight.
+
+At the xs size, have the sidebar stack to full width.

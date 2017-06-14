@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="everything">
+    <h1>A heading!</h1>
+    <p>Here's some text!</p>
+    <p>Here's a second set of text!</p>
+    <div class="holder">
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ul>
+    </div>
+    <div class="holder">
+      <ol>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+        <li>List Item 6</li>
+      </ol>
+    </div>
+    <div id="change-me">This part needs to change!</div>
+    <div id="secret">We should hide this!</div>
+	  </div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script>
+		// $('body').text('hello?')
+		// $('h1').css({'color': 'blue', 'background-color': 'green'});
+		// $('#everything').css('font-size', '+=5');
+		// $('#everything').css('font-size', '40');
+		// $('body').css('background-color', 'red');
+		// $('.className'), $('#idName')
+		// $('.holder').css('border', 'solid 1px black');
+		// $('ul').children('li').css('font-wight', 'bold');
+		// $('li').css('font-weight', 'bold');
+		// $('ul').parents('li').css('')
+		// $('h1').next('p').css('color', 'green');
+		// .prev
+		// $('#secret').hide();
+		// $('#secret').show();
+		// $('#secret').toggle();
+		// $('#change-me').text('Something different');
+		// $('#change-me').append(' this is appended');
+		// $('#change-me').html('<p>Something different</p><p> this is appended</p>')
+		// var = changeMe = $('change-me');
+		// changeMe.text('Something different');
+		// change-me
+		// 		.text('Something different')
+		// 		.append(' this is appdned')
+		// 		.html('<p>Something different</p><p> this is appended</p>');
+		// $('#everything').append, appendTo, insert,InsertBefore, add, remote('')
+		// $('#everything').append(function() {
+		// 	return '\
+		// 	<ol> \
+		// 		<li>llll</li> \
+		// 		<li>2222</li> \
+		// 		<li>3333</li> \
+		// 	</ol>';
+		// });
+		// $('#everything').append('<ol><li>llll</li><li>2222</li><li>3333</li></ol>');
+		// $('#everything').append(
+		// 	'<ol>' +
+		// 		'<li>llll</li>' +
+		// 		'<li>2222</li>' +
+		// 	'</ol>';
+		// });
+		
+		$('h1').hide().slideDown(5000);
+		$('#everything').fadeOut(10000); // 4 seconds
+		$('h1').animate({
+			opacity: 0.25,
+			left: '+=500',
+			height: 'toggle'
+
+		}, 5000);
+		
+		</script>
+</body>
+</html>

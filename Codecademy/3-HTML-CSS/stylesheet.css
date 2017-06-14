@@ -1,0 +1,38 @@
+html {
+  border: 3px solid red;
+}
+
+h3 {
+	color: blue#cc6666;
+	font-family: serif;
+}
+
+p {
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+	height: 50px;
+	width: 120px;
+	border: 5px solid #6495ed;
+	border-radius: 5px;
+	background-color: #bcd2ee;
+	margin: auto;
+	text-align: center;
+	padding-top: 7px;
+}
+
+a {
+	text-decoration: none;
+	color: #6495ed;
+	font-family: Arial;
+}
+
+span {
+	color: #fff;
+	font-size: 1.3em;
+}

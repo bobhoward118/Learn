@@ -1,0 +1,19 @@
+{"employees":[
+	{"firstName":"John", "lastName":"Doe"},
+	{"firstName":"Anna", "lastName":"Smith"},
+	{"firstName":"Peter", "lastName":"Jones"}
+]}
+
+var employees = [
+	{"firstName":"John", "lastName":"Doe"},
+	{"firstName":"Anna", "lastName":"Smith"},
+	{"firstName":"Peter","lastName": "Jones"}
+];
+
+employees[0].firstName + " " + employees[0].lastName;
+// or 
+employees[0]["firstName"] + " " + employees[0]["lastName"];
+
+employess[0].firstName = "Gilbert";
+//or
+employees[0]["firstName"] = "Gilbert";

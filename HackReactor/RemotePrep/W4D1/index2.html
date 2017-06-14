@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    var addPost = function(data) {
+      $('#content').append('<h1>' + data.title + '</h1>')
+      $('#content').append('<h2>' + data.id + '</h2>')
+      $('#content').append('<p>' + data.body + '</p>')
+    }
+
+    var apiCall = "http://jsonplaceholder.typicode.com/posts/";
+
+    for (var i = 0; i < 10; i++) {
+      $.get(apiCall + i.toString()).success(addPost);
+    }
+
+
+
+    // $.ajax({
+    //   method: 'GET',
+    //   url: 'http://jsonplaceholder.typicode.com/posts/1',
+    //   success: function(data) {
+    //     console.log(data)
+    //     $('#content').append('<p>' + data.body + '</p>')
+    //   }
+    // })
+
+
+  </script>
+</body>
+</html>
+<!-- [
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  }, -->
+<!-- &APPID=93b03ba103c6cabec96f47a6f650769e
+&APPID=428ef8e61bbbd705548ed234d65f8c5c -->

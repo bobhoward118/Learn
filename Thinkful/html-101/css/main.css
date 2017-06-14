@@ -1,0 +1,14 @@
+p {
+	font-size: 10px;
+	color: black;
+}
+
+.my-box {
+	width: 200px;
+	height: 300px;
+ 	background-color: purple;
+}
+
+.blue {
+	background-color: blue;
+}

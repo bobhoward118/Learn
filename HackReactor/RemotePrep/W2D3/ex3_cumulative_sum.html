@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>The product of every number from 1 through 10 is <span id="product"></span>.</div>
+	<script>
+		var n = 1, sum = 0;
+
+		while (n <= 10) {
+			sum = sum + n;
+			n++
+		}
+
+		console.log("The sum of the numbers 1 - " + (n - 1) + " is " + sum);
+
+
+		var num = 1, product = 1;
+
+		while (num <= 10) {
+			product = product * num;
+			num++
+		}
+
+		document.querySelector("#product").innerHTML = " " + product;
+	</script>
+</body>
+</html>

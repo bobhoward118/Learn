@@ -1,0 +1,304 @@
+/* ############### RESET START ############### */
+/*http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126  License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ############### RESET END ############### */
+
+
+
+/* GLOBAL */
+h1 {
+	font-family: 'Special Elite', cursive;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 2.2em;
+	letter-spacing: 0.05em;
+}
+
+h3 {
+	font-family: 'Special Elite', cursive;
+	color: #f50;
+	font-size: 0.9em;
+	margin-top: 25px;
+}
+
+h4 {
+	font-family: 'Playfair Display', serif;
+	letter-spacing: .2em;
+	clear: right;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.7em;
+}
+
+li {
+	font-family: 'Special Elite', cursive;
+	font-size: 0.7em;
+}
+
+nav {
+	font-family: 'Special Elite', cursive;
+	font-size: 1.2em;
+}
+
+span {
+	font-family: 'Special Elite', cursive;
+	font-size: 0.7em;
+}
+
+body {
+	background-color: #e1e1e1;
+	z-index: 0;
+}
+
+section {
+	overflow: hidden;
+}
+
+
+
+/* NAVIGATION */
+.navigation {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+nav {
+  position: relative;
+  right: 0px;
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+  z-index: 9999;
+}
+
+nav ul {
+	text-align: right;
+}
+
+nav a.current {
+	color: #f50;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+	margin-left: 10px;
+	color: white;
+}
+
+
+
+/* HERO */
+.hero {
+  background-size: 100%;
+  width: 100%;
+  height: 639px;
+  position: fixed;
+  top: 0;
+  /*z-index: 0;*/
+}
+
+.hero-text {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 290px;
+	transform: translateY(-50%);
+	color: white;
+}
+
+.hero-text h1 {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding: 19px 8px 12px 8px;
+	display: inline-block;
+	margin: 18px auto;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+
+
+/* MENU */
+#menu {
+	position: relative;
+	top: 480px;
+	height: 2190px;
+	background-color: #e1e1e1;
+	margin: 0 auto 110px;
+	padding-top: 25px;
+	line-height: 1em;
+	overflow: hidden;
+}
+
+.columns {
+	max-width: 960px;
+}
+
+.columns h2 {
+	margin-bottom: 45px;
+	border-bottom: 2px solid #ccc;
+	line-height: 1.5em;
+}
+
+.col-left {
+	max-width: 400px;
+	float: left;
+}
+
+.col-right {
+	max-width: 400px;
+	float: right;
+}
+
+.columns img {
+	margin: 15px 0 10px;
+}
+
+
+
+/* LOCATION */
+#location {
+	background-image: url("../img/bg.jpg");
+  height: 465px;
+  position: relative;
+  color: white;
+}
+
+.columns {
+	max-width: 960px;
+	margin: 57px auto;
+}
+
+.col-left {
+	float: left;
+	max-width: 440px;
+	/*margin: 50px 0;*/
+}
+
+.col-right {
+	float: right;
+	max-width: 440px;
+	/*margin: 50px 0;*/
+}
+
+#location h2 {
+	max-width: 960px;
+	margin: 0 auto 10px;
+	border: none;
+	font-size: 2em;
+}
+
+#location li {
+	max-width: 960px;
+	margin: 0 auto;
+	line-height: 1.3em;
+}
+
+
+
+/* OUR-STORY */
+#our-story {
+  background-image: url("../img/blanket-crop.jpg");
+  height: 525px;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.story {
+	background-color: #eee;
+	margin: 57px auto;
+	padding: 30px;
+	height: 350px;
+	width: 900px;
+}
+
+.story-left {
+	width: 350px;
+	float: left;
+}
+
+.story-right {
+	width: 499px;
+	float: right;
+}
+
+.story img {
+	position: relative;
+/*	top: 30px;
+	right: 30px;*/
+}
+
+.story h2 {
+	color: black;
+	margin-bottom: 25px;
+}
+
+.story p {
+	color: black;
+	line-height: 1.4em;
+	margin-bottom: 8px;
+}
