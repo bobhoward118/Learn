@@ -1,0 +1,24 @@
+/* CSS is cAsE sEnSiTiVe
+Can use style attribute within HTML elements or
+Can place CSS within style HTML tags or
+Can place CSS in external style sheet (most common)
+Generic font familys include Monospace, Serif, Sans-Serif
+Generic font family names are not case-sensitive and do not need quotes because they are CSS keywords.
+multiple class declarations: <p class="class1 class2"> */
+.class { /* can have multiple elements with same class */
+  color: blue
+}
+#id { /* higher specificity than classes, only use each ID once */
+  color: red;
+}
+p {
+  background-color: silver;
+  border-color: red;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  color: blue;
+  font-family: Monospace;
+  font-size: 30px;
+  width: 30px;
+}
