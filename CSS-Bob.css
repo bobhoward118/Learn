@@ -6,7 +6,9 @@ Generic font familys include Monospace, Serif, Sans-Serif
 Generic font family names are not case-sensitive and do not need quotes because they are CSS keywords.
 multiple class declarations: <p class="class1 class2">
 Units of length: px / absolute in or mm / relative em or rem
-Highest specificity is to use !important keyword */
+Highest specificity is to use !important keyword
+"CSS Rules" consist of the "selector" and all "declarations"
+"Declarations" consist of a "property" and a "value" */
 .class { /* can have multiple elements with same class, higher specificity than HTML element selectors */
   color: #0000FF;
 }
@@ -39,17 +41,28 @@ h1, .menu { /* multiple selectors */
 }
 p {
   background: url(http://images.com/image.jpg) no-repeat center center;
-  background-color: silver;
+    /* Old browsers */
+    background: #141E30;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(-45deg, #35577D, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(-45deg, #35577D, #141E30);
+  background-color: silver; /* background */
+  background-image: url("https://codecademy.com/image1.png");
+  background-position: center;
   background-size: cover;
   border-color: red;
   border-radius: 50%;
   border-style: solid;
   border-width: 5px;
-  color: blue;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  color: blue; /* forground */
   cursor: pointer;
+  display; block;
   float: left;
-  font-family: Monospace;
+  font-family: Monospace; /* default is Times New Roman */
   font-size: 30px;
+  font-style: italic;
   font-weight: 100;
   height: 800px;
   letter-spacing: 8px;
@@ -58,6 +71,7 @@ p {
   margin: 5px 6px 7px 8px; /* margin-top/right/bottom/left */
     margin: 0;
   max-width: 940px;
+  opacity: 0.5; /* 0 to 1 for 0% to 100% */
   padding: 5px 6px 7px 8px; /* padding-top/right/bottom/left */
   position: relative;
   text-align: center; /* justify */
