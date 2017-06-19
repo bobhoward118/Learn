@@ -57,11 +57,10 @@ p {
   max-width: 940px;
   padding: 5px 6px 7px 8px; /* padding-top/right/bottom/left */
   position: relative;
-  text-align: center;
+  text-align: center; /* justify */
   text-decoration: none;
   text-transform: uppercase;
   top: 200px;
   transition: background .5s;
-  width: 30px;
-    width: 100%;
+  width: 30px; /* 100%, em */
 }
