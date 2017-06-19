@@ -16,10 +16,13 @@ Highest specificity is to use !important keyword */
 .class1 .class2 {
   color: rgb(255, 255, 255) !important; /* highest specificity, even overrides inline styles */
 }
-.class1 h1 {
+.class1 h1 { /* nested */
   color: #FFF;
 }
-html, body {
+h1.special { /* chaining h1 elements that have special class */
+  color: rgb(255, 0, 0);
+}
+h1, .menu { /* multiple selectors */
   margin: 0;
 }
 .btn:hover, .nav ul li:hover {
