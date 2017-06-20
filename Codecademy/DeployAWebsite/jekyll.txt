@@ -1,0 +1,43 @@
+gem install jekyll
+jekyll new personal-website // creates new Jekyll site
+ls
+cd personal-webiste
+jekyll serve // local server, vew at http://localhost:4000/ or http://0.0.0.0:4001/ then CTRL + C to stop
+
+
+git init
+git remote add origin http://github.com/bobhoward119/bobhoward119.github.io.git
+// to fix mistake => git remote rm origin
+git remote -v // confirms remote added successfully by listing remotes & their URLs
+git add .
+git commit -m "Save my work"
+git push -u origin master
+
+
+GitHub Pages Custom Domain
+username.github.io repo
+New File button
+name new file CNAME (no extension)
+on line 1 type new domain name =>
+yourcustomdomain.com
+commit new file
+Repo settings => Github Pages =>
+"Your site is published at http://yourcustomdomain.com" (without quotes)
+The DNS records are created inside of a Hosted Zone in Route 53. A Hosted Zone is essentially a group of DNS records for a single domain.
+Access Route 53 (at AWS) => Hosted Zones => open it
+Note all 4 NS (Name Server) entries, click on Registered domains under Domains, note Name Servers (same as in Hosted Zones)
+An 'A' record directs a domain name to an IP address
+Under Hosted Zone, choose Create Record Set
+Leave Name field blank
+Set Type to "A - IPv4 address"
+Leave TTL(Seconds) at default 300
+In Value text box enter GitHub's IP Addresses (DNS servers):
+192.30.252.153
+192.30.252.154
+Setup www Sub-Domain using a CNAME record (Canonical Name) which specifies that a domain name will be used as an alias, or substitute, for the true (canonical) domain name
+Create Record Set, in Name field enter only www, set Type to CNAME - Canonical name, in Value box enter username.github.io, save record set.
+REVIEW:
+NS (Name Server) record translates domain name into IP
+A (Alias) record directs domain to GitHub's servers using their IP addresses
+CNAME (canonical name) record specifies what customer domain will point to true (canonical) domain
+* can also use dig command in terminal to look up domain name to ensure CNAME and A records were set correctly
