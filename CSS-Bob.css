@@ -55,15 +55,15 @@ p {
   border-radius: 50%;
   border-style: solid;
   border-width: 5px;
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97);
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.97); /* alpha 0 is invisible */
   color: blue; /* forground */
   cursor: pointer;
   display; block;
   float: left;
   font-family: Helvetica, Monospace; /* default is Times New Roman */
   font-size: 30px;
-  font-style: italic;
-  font-weight: 100;
+  font-style: italic; /* same as <em> */
+  font-weight: 100; /* bold is same as <strong> */
   height: 800px;
   letter-spacing: 8px;
   line-height: 100px;
@@ -75,7 +75,7 @@ p {
   padding: 5px 6px 7px 8px; /* padding-top/right/bottom/left */
   position: relative;
   text-align: center; /* justify */
-  text-decoration: none;
+  text-decoration: none; /* underline is same as <u>, line-through same as <del> */
   text-transform: uppercase;
   top: 200px;
   transition: background .5s;
