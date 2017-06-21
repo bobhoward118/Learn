@@ -13,3 +13,15 @@ img {
 .ingredients li {
   list-style: square;
 }
+
+p.time {
+  color: gray;
+}
+
+p .citation, p .external-link {
+  color: SeaGreen;
+}
+
+h1, h2, p, li {
+  font-family: Helvetica;
+}
