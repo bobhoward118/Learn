@@ -1,7 +1,7 @@
 var myArray = [];
 myArray.push('Bob Howard', 'bobhoward118')
-var cutName = function(string) {
-  return string.split(' ');
+var cutName = function(name) {
+  return name.split(' ');
 }
 var myData = {};
 myData['fullName'] = cutName(myArray[0])
