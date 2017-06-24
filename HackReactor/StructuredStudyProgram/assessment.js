@@ -13,13 +13,13 @@ console.log(output); // --> [4, 6, 10]
 // Starter code **** NOT YET WORKING ****
 
 function isEven(num) {
- var myArray = [];
- for (var i = 0; i < num.length; i++) {
-   if (num[num] % 2 === 0) {
-     myArray.push(num);
-   }
- }
- console.log(myArray);
+  var myArray = [];
+  for (var i = 0; i < num.length; i++) {
+    if (num[i] % 2 === 0) {
+      myArray.push(i);
+    }
+  }
 }
 
-isEven[0, 1, 2, 3, 4];
+var output = isEven([1, 4, 5, 6, 10, 13]);
+console.log(output);
