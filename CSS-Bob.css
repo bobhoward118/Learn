@@ -75,12 +75,12 @@ p {
   margin: 5px 6px 7px 8px; /* margin-top/right/bottom/left */
     margin: 0;
   max-width: 940px;
-  opacity: 0.5; /* 0 to 1 for 0% to 100% */
+  opacity: 0.5; /* 0 to 1 for 0% to 100%, applies to entire element */
   padding: 5px 6px 7px 8px; /* padding-top/right/bottom/left */
   position: relative;
   text-align: center; /* justify */
   text-decoration: none; /* underline is same as <u>, line-through same as <del> */
-  text-transform: uppercase;
+  text-transform: uppercase; /* lowercase, capitalize, initial, inherit, none */
   top: 200px;
   transition: background .5s;
   width: 30px; /* 100%, em */
