@@ -37,9 +37,6 @@ h1, .menu { /* multiple selectors */
 * {
   font-family: Arial;
 }
-a:hover {
-  color="blue";
-}
 @media (min-width: 850px) {
   .header h1 {
     font-size: 120px;
