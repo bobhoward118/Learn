@@ -61,30 +61,36 @@ p {
   border-radius: 50%;
   border-style: solid;
   border-width: 5px;
+  bottom: 0px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);/* alpha 0 is invisible
   5 values are: offset-x, offset-y, blur-radius*, spread-radius*, color [* = optional] */
   color: blue; /* forground */
   cursor: pointer;
   display; block;
-  float: left;
+  float: left; /* removes from normal flow, moved to left or right of containing element, commonly used with width: */
   font-family: Helvetica, Monospace; /* default is Times New Roman */
   font-size: 30px;
   font-style: italic; /* same as <em> */
   font-weight: 100; /* bold is same as <strong> */
   height: 800px;
+  left: 0px;
   letter-spacing: 8px;
   line-height: 100px;
   list-style: none; /* square */
-  margin: 5px 6px 7px 8px; /* margin-top/right/bottom/left */
+  margin: 5px 6px 7px 8px; /* margin-top/right/bottom/left, margin: auto; to center block elements horizontally, can also center images (inline but can sitcho) */
     margin: 0;
   max-width: 940px;
   opacity: 0.5; /* 0 to 1 for 0% to 100%, applies to entire element */
   padding: 5px 6px 7px 8px; /* padding-top/right/bottom/left */
-  position: relative;
+  position: relative; /* moves relative to it's position in the normal flow using left, right, top, bottom (px, %, em) */
+  position: absolute; /* removes from normal flow, locks in place relative to closest 'positioned' parent container (up to body), need, normally position: relative on parent container */
+  position: fixed; /* removes from normal flow, locks relative to browser window, does not move when scrolling */
+  right: 0px;
   text-align: center; /* justify */
   text-decoration: none; /* underline is same as <u>, line-through same as <del> */
   text-transform: uppercase; /* lowercase, capitalize, initial, inherit, none */
-  top: 200px;
+  top: 20px;
   transition: background .5s;
   width: 30px; /* 100%, em */
+  z-index: 1; /* later html itmes appear on top, highest # is on top */
 }
