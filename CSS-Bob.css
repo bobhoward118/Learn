@@ -64,7 +64,14 @@ p {
   bottom: 0px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);/* alpha 0 is invisible
   5 values are: offset-x, offset-y, blur-radius*, spread-radius*, color [* = optional] */
-  color: blue; /* forground */
+  color: hsl(); /* forground, hue, saturation, lightness */
+    color: hsl(0, 100%, 50%); /* red */
+    color: hsl(60, 100%, 50%); /* yellow */
+    color: hsl(120, 100%, 50%); /* green */
+    color: hsl(180, 100%, 50%); /* cyan */
+    color: hsl(240, 100%, 50%); /* blue */
+    color: hsl(300, 100%, 50%); /* magenta */
+    /* hue = color, saturation = gray (100% = no grey), lightness = black (0%) or white (100%), 50% is normal */
   cursor: pointer;
   display; block;
   float: left; /* removes from normal flow, moved to left or right of containing element, commonly used with width: */
