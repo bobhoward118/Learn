@@ -98,6 +98,7 @@ p {
   text-decoration: none; /* underline is same as <u>, line-through same as <del> */
   text-transform: uppercase; /* lowercase, capitalize, initial, inherit, none */
   top: 20px;
+  transform: scale(1.5);
   transition: background .5s;
   width: 30px; /* 100%, em */
   z-index: 1; /* later html itmes appear on top, highest # is on top */
