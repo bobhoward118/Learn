@@ -19,7 +19,7 @@ Highest specificity is to use !important keyword
   color: rgb(255, 255, 255) !important; /* highest specificity, even overrides inline styles */
 }
 .class1 h1 { /* nested */
-  color: #FFF;
+  color: transparent;
 }
 h1.special { /* chaining h1 elements that have special class */
   color: rgb(255, 0, 0);
@@ -45,6 +45,11 @@ a:hover {
     font-size: 120px;
   }
 }
+p { /* **** FlexBox START **** */
+  align-items: flex-start: /* aligns vertically => flex-end, center, baseline, stretch */
+  justify-content: flex-start; /* aligns horizontally => flex-end, center, space-between, space-around */
+
+} /* **** FlexBox END **** */
 p {
   background: url(http://images.com/image.jpg) no-repeat center center;
     /* Old browsers */
@@ -98,7 +103,7 @@ p {
   text-decoration: none; /* underline is same as <u>, line-through same as <del> */
   text-transform: uppercase; /* lowercase, capitalize, initial, inherit, none */
   top: 20px;
-  transform: scale(1.5);
+  transform: scale(1.5); /* skewX(-32deg); skewY(10deg); */
   transition: background .5s;
   width: 30px; /* 100%, em */
   z-index: 1; /* later html itmes appear on top, highest # is on top */
