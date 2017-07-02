@@ -1,0 +1,16 @@
+pwd
+ls
+cd freight
+ls
+cd porteur
+cd ../..
+ls
+cd mountain/downhill
+touch dirt.txt
+ls
+mkdir safety
+cd ../..
+ls
+mkdir triathalon
+touch triathalon/speed.txt
+ls

@@ -1,1 +1,16 @@
+Git project has 3 parts: 1) Working Directory  2) Staging Area  3) Repository
+
+GOOD Commit Message: starts with imperative verb, ends with period, in quotes, present tense, 50 characters or lightness
+
+Ctrl + X to exit Nano
+
 git init
+git status
+git add . (or file_name)
+git commit -m "Complete first line of dialogue"
+
+git remote add origin https://github.com/bobhoward118/sorcerers-code.git
+git remote -v (confirms remote has been added)
+
+git push -u origin master (use -u first time only)
+git push origin master
