@@ -78,6 +78,7 @@ p {
     color: hsl(240, 100%, 50%); /* blue */
     color: hsl(300, 100%, 50%); /* magenta */
     /* hue = color, saturation = gray (100% = no grey), lightness = black (0%) or white (100%), 50% is normal */
+  content: ""; /* must be defined for :before and :after, usually photo or text, but for shapes set to empty string "" */
   cursor: pointer;
   display; block;
   float: left; /* removes from normal flow, moved to left or right of containing element, commonly used with width: */

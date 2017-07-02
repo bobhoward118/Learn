@@ -1,4 +1,4 @@
-body {
+.main {
   font-family: Helvetica;
 }
 
@@ -10,25 +10,24 @@ body {
   text-align: center;
 }
 
-.headings {
+.block__h2 {
   font-size: 32px;
-  font-weight: bold;
   color: white;
 }
 
-.brushes {
+.block__h2--mediumspringgreen {
   background-color: mediumspringgreen;
 }
 
-.frames {
+.block__h2--lightcoral {
   background-color: lightcoral;
 }
 
-.paint {
+.block__h2--skyblue {
   background-color: skyblue;
 }
 
-.price {
+.block__span {
   font-weight: bold;
   color: blue;
 }
