@@ -1,0 +1,13 @@
+BASH = Bourne-Again SHell
+  created 27 years ago by Brian Fox
+  default CLI - Mac and Linux
+
+cat hello.txt (prints contents of file to terminal)
+cd dir_name (arguments {file, dir, program} are passed into a command)
+  cd ../../ or ../..
+clear
+echo "Hello" >> hello.txt (creates file and adds text)
+ls (lists)
+mkdir dir_name (make directory)
+pwd (print working directory)
+touch file_name (create file)
