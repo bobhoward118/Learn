@@ -23,11 +23,18 @@ header {
   background-color: #0e0e0e;
   color: white;
   padding: 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 nav {
   text-align: right;
   margin-bottom: 10px;
+  position: fixed;
+  top: 87px;
+  width: 100%;
+  z-index: 10;
 }
 
 nav a {
@@ -46,10 +53,13 @@ footer {
   height: 200px;
   color: white;
   position: relative;
+  top: 150px;
 }
 
 .container {
   text-align: center;
+  position: relative;
+  top: 120px;
 }
 
 .container img {
@@ -61,6 +71,9 @@ footer {
   height: 50px;
   background-color: white;
   display: inline-block;
+  position: relative;
+  bottom: 25px;
+  z-index: 5;
 }
 
 .date-square  p {
@@ -70,6 +83,8 @@ footer {
   background-color: white;
   text-align: center;
   margin: 0;
+  position: relative;
+  top: 10px;
 }
 
 #logo {
@@ -77,8 +92,8 @@ footer {
   width: auto;
   margin: 0px;
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: 5px;
+  bottom: 5px;
 }
 
 nav li {
