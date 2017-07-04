@@ -7,15 +7,16 @@ body  {
 }
 
 h1 {
-
+  display: block;
+  position: static;
 }
 
 h2 {
-
+  display: block;
 }
 
 h4 {
-
+  display: block;
 }
 
 header {
@@ -36,12 +37,15 @@ nav a {
 
 p {
   color: white;
-  border: 1px solid white;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
 }
 
 footer {
   height: 200px;
   color: white;
+  position: relative;
 }
 
 .container {
@@ -49,13 +53,14 @@ footer {
 }
 
 .container img {
-
+  display: inline-block;
 }
 
 .date-square {
-  width: 50px;
+  width: 55px;
   height: 50px;
   background-color: white;
+  display: inline-block;
 }
 
 .date-square  p {
@@ -74,4 +79,14 @@ footer {
   position: absolute;
   right: 15px;
   bottom: 15px;
+}
+
+nav li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+}
+
+footer li {
+  display: inline;
 }
