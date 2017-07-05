@@ -1,13 +1,79 @@
 BASH = Bourne-Again SHell
   created 27 years ago by Brian Fox
   default CLI - Mac and Linux
+.hidden files and directories start with a dot
+-a is called an Option
 
-cat hello.txt (prints contents of file to terminal)
-cd dir_name (arguments {file, dir, program} are passed into a command)
-  cd ../../ or ../..
+>
+  REDIRECTS standard output of command on left to file on right
+>>
+  APPENDS standard output of command on left to file on right
+<
+  INPUTS standard output of command on left into command on right - 'command to command' redirection
+|
+  PIPES standard output of command on left to file on right
+~/.bash_profile
+  Stores environment settings in this file, loads at launch
+alias pd="pwd"
+  create keyboard shortcuts
+cat hello.txt
+  prints contents of file to terminal
 clear
-echo "Hello" >> hello.txt (creates file and adds text)
-ls (lists)
-mkdir dir_name (make directory)
-pwd (print working directory)
-touch file_name (create file)
+cd dir_name
+  arguments {file, dir, program} are passed into a command
+  cd ../../ or ../..
+cp file_name1.txt file_name2.txt directory_name/
+  copies (to sub-directory above)
+*
+  wildcard (e.g. cp m*.txt scifi/ )
+echo "Hello" >> hello.txt
+  creates file and adds text
+env
+  returns environment variables
+env | grep path
+  displays value of single variable, such as path
+export USER-"Jane Doe"
+  makes the variable to be available to all child sessions initiated from the session you are in. This is a way to make the variable persist across programs.
+grep "Mount" mountains.txt
+  Global Regular Expression Print - searches files for matching lines and returns results (cAsE sEnSiTiVe)
+grep -i
+  case insensitve
+grep -R Arctic /home/ccuser/workspace/geography
+  recursive - outputs file names and lines of matching results
+grep -rl
+  recursive, files within matches - outputs only file names
+home (echo $HOME)
+  variable displays path of home directory
+ls -alt
+  lists, all files (inc. hidden), long format, by time last modified
+  ls -l
+    access rights, hard links (child directories & files), owner username, owner group name, size (bytes), date & time last modified, name of file or directory
+mkdir media
+  make directory
+mv file_name.txt directory_name/
+  move or RENAME (mv file_name_old.txt file_name_new.txt )
+nano hello.txt
+  CLI text editor
+path (echo $PATH)
+pwd
+  print working directory
+rm file_name.txt
+  remove files
+rm -r directory_name
+  removes directory and all child directories
+sed 's/snow/rain/' file_name.txt
+  stream editor ('substitution/search text/replacement text/')
+sort file_name.txt
+  displays each line of file alphabetically
+stderr
+  standard error
+source ~/.bash_profile
+  activates changes without re-opening terminal
+stdin
+  standard input
+stdout
+  standard output
+touch file_name.txt
+  create file (if already exists, updates modification time)
+uniq file_name.txt
+  unique - prints every line without duplicates
