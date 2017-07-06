@@ -32,3 +32,6 @@ git commit -m "first commit"
 git remote add origin https://github.com/bobhoward118/git_practice.git
 git push -u origin master
 ******
+
+git diff file_name.txt (dif between working dir & staging)
+git log

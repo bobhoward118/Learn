@@ -1,0 +1,7 @@
+git init
+git status
+git add scene-1.txt
+git status
+git diff scene-1.txt
+git commit -m "Complete first line of dialogue"
+git log
