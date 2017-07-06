@@ -3,36 +3,46 @@ body {
 }
 
 h1 {
+  margin: 20px;
+  text-align: center;
   font-size: 18px;
 }
 
-h1,
-h3 {
-  text-align: center;
-}
-
 .container {
-  background-color: dodgerblue;
+  height: 300px;
+  width: 600px;
+  background-color: WhiteSmoke;
   display: flex;
-  align-items: center;
-  min-height: 125px;
-}
-
-.box {
-  background-color: whitesmoke;
-  border: 1px solid white;
-  width: 100px;
-  height: 100px;
-}
-
-#wrap {
   flex-wrap: wrap;
+  margin: auto;
 }
 
-#nowrap {
-  flex-wrap: nowrap;
+.left,
+.center,
+.right {
+  height: 75px;
+  width: 200px;
+  margin: 2px;
+  background-color: DodgerBlue;
+  border: 2px solid lightgrey;
 }
 
-#reverse {
-  flex-wrap: wrap-reverse;
+#flexstart {
+
+}
+
+#flexend {
+
+}
+
+#center {
+
+}
+
+#between {
+
+}
+
+#around {
+
 }
