@@ -28,21 +28,21 @@ h1 {
 }
 
 #flexstart {
-
+  align-content: flex-start;
 }
 
 #flexend {
-
+  align-content: flex-end;
 }
 
 #center {
-
+  align-content: center;
 }
 
 #between {
-
+  align-content: space-between;
 }
 
 #around {
-
+  align-content: space-around;
 }
