@@ -1,10 +1,17 @@
+for (var counter = 1; counter <= 5; counter = counter + 1 )
+{
+  console.log(counter);
+}
+console.log("All done with the loop!");
+
+
 var myAge = 30;
 console.log(myAge);
-
 "wonderful day".substring(3, 7); // =>
 
 11 % 3 === 0 // => false
 11 % 3 // => 2
+
 
 if ("Jon".length * 2 / (2 + 1) === 2) {
   confirm("Will this run the first block?");
@@ -12,15 +19,18 @@ if ("Jon".length * 2 / (2 + 1) === 2) {
   confirm("Or the second block")
 }
 
+
 if ('Bob Howard'.length < 5) {
   console.log("Let's go down the first road");
 } else {
   console.log("You have a long name");
 }
 
+
 if ('Bob'.length >= 3) {
   console.log('Your name is at least 3 letters long');
 }
+
 
 !== // Not equal to
 === // Equal to
