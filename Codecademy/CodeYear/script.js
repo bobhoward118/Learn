@@ -31,13 +31,14 @@ if ('Bob'.length >= 3) {
   console.log('Your name is at least 3 letters long');
 }
 
-
+/*
 !== // Not equal to
 === // Equal to
 <= // Less than or equal to
 >= // Greater than or equal to
 < // Less than
 > // Greater than
+*/ 
 
 console.log(15 > 4);
 console.log(2 * 5);
