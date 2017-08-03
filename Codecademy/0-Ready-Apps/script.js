@@ -1,3 +1,30 @@
+
+
+// (if x = 4)
+x += 2; // 6
+x -= 2; // 2
+x *= 2; // 8
+x /= 2; // 2
+x++; // 5
+x--; // 3
+++x; // 5
+--x; // 3
+
+
+let changeMe = true;
+changeMe = false;
+console.log(changeMe);
+
+
+const entree = 'Enchiladas';
+const price = 12;
+
+console.log(entree);
+console.log(price);
+
+entree = 'Tacos';
+
+
 Number.isInteger(2017);
 Math.ceil(43.8); // 44
 Math.floor(Math.random() * 100); // 36
