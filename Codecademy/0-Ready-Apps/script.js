@@ -1,4 +1,10 @@
+let myName = 'Bob';
+let myCity = 'Austin';
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`); // ES6 use "backticks" (left of 1) and wrap variable is ${myName}
 
+
+let favoriteAnimal = 'bobcat';
+console.log('My favorite animal: ' + favoriteAnimal);
 
 // (if x = 4)
 x += 2; // 6
