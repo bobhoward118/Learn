@@ -1,14 +1,14 @@
-// Prompt user for today's forcase in Kelvin
+// Prompt for today's forcast in Kelvin
 const kelvin = prompt('What is the Kelvin temperature today?');
 
 // Conversion from Kelvin to Celsius
-const celsius = kelvin - 273;
+let celsius = kelvin - 273;
 
-// Conversion from Celsius to Fehrenheit
-var fahrenheit = celsius * (9/5) + 32;
+// Convert Celsius to Fehrenheit
+let fehrenheit = celsius * (9/5) + 32;
 
 // Remove decimal places
-fahrenheit = Math.floor(fahrenheit);
+fehrenheit = Math.floor(fehrenheit);
 
-// Log temperature conversion from Kelvin to Fahrenheit
-console.log('The temperature is ' + fahrenheit + ' degrees fahrenheit.');
+// Log the result of converting the Kelvin temperature to Fehrenheit.
+console.log('The temperature is ' + fehrenheit + ' degrees fehrenheit.');
