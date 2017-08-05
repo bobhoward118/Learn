@@ -1,7 +1,32 @@
+// *#*#*#*  FUNCTIONS start *#*#*#*
+
+
+
+let calculatorIsOn = false;
+
+const pressPowerButton = () => {
+  if (calculatorIsOn) {
+    console.log('Calculator turning off.');
+    calculatorIsOn = false;
+  } else {
+    console.log('Calculator turning on.');
+    calculatorIsOn = true;
+  }
+};
+
+pressPowerButton();
+// Output: Calculator turning on.
+
+pressPowerButton();
+// Output: Calculator turning off.
+
+// *#*#*#*  FUNCTIONS end *#*#*#*
 
 
 
 
+
+// *#*#*#*  PROJECT KELVIN WEATHER start *#*#*#*
 // *#*#*#*  INSTALL BABEL start *#*#*#*
 npm install babel-cli
 npm install babel-preset-env // -D adds to devDependencies in package.json
@@ -26,8 +51,8 @@ package.json
   }
 
 npm run build
-
 // *#*#*#*  INSTALL BABEL end *#*#*#*
+// *#*#*#*  PROJECT KELVIN WEATHER end *#*#*#*
 
 
 // *#*#*#*  ES5 vs ES6 *#*#*#*
